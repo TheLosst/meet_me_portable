@@ -58,7 +58,7 @@ class _PrivateChatState extends State<PrivateChat> {
     final response =
         await http.post(Uri.parse('$connIp/sendMessage.php'), body: {
       "fromUsr": userLoggined.id.toString(),
-      "toUsr": messageTo.id.toString(),
+      "toUsr": (messageTo.id - 3).toString(),
       "text": s
     });
     print(json.decode(response.body));

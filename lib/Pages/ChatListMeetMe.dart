@@ -102,6 +102,7 @@ class MessageList extends StatelessWidget {
                     itemBuilder: (BuildContext context, int index1) =>
                         GestureDetector(
                               onTap: () {
+                                messageTo = usersSwipeListData.elementAt(int.parse(toUsers.elementAt(index1).id));
                                 index_users_chat = searchUsers(int.parse(toUsers.elementAt(index1).id));
                                 Push().PushTo(PrivateChat(), context);
                               },

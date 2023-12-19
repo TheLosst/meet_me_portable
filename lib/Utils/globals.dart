@@ -29,7 +29,7 @@ User user = User(id: 0 ,sex: "0",withMeets: "null",targetMeet: "null",targetHeig
 late User userLoggined;
 User messageTo = user;
 
-int currentPageIndex = 0;
+int currentPageIndex = 2;
 
 late int index_users_chat;
 
