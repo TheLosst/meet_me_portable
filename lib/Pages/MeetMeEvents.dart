@@ -45,7 +45,7 @@ Future<void> createUsers() async {
   usersSwipeListData = await fetchAllUsers();
 }
 
-
+// У сообщения должен быть id и мы смотрим, чтобы сообщение отправлялось от нас пользователю с id и наоборот, и находим список id
 int searchUsers(int inputID){
   for(int i = 0; i < usersSwipeListData.length; i++)
     {
@@ -57,7 +57,7 @@ int searchUsers(int inputID){
       // print("________________");
       if (usersSwipeListData.elementAt(i).id == inputID)
         {
-          print("${usersSwipeListData.elementAt(i).id} -> ${i}");
+          print("${usersSwipeListData.elementAt(i).username} -> ${i}");
           return i;
         }
     }

@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
+import '../../AppBars/bottom_nav_bar.dart';
 import '../../Utils/Push.dart';
 import '../../Utils/User.dart';
 import '../../Utils/globals.dart';
@@ -77,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
         //user.setPassword(" ");
         //user.setEmail(tempProfile);
 
-        Push().PushTo(Profile(), context);
+        Push().PushTo(BottomNavBarMeetMe(), context);
         //Navigator.push(context, MaterialPageRoute(builder: (context)=>DashBoard(),),);
       } else {
         // Fluttertoast.showToast(

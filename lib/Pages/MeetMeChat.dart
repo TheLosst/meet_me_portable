@@ -126,97 +126,6 @@ class _MeetMeChatPageState extends State<MeetMeChatPage> {
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 51, top: 57),
-                child: Container(
-                  width: 504,
-                  height: 59,
-                  decoration: BoxDecoration(
-                      color: Color.fromRGBO(255, 225, 238, 1),
-                      borderRadius: BorderRadius.all(Radius.circular(15)),
-                      border: Border.all(color: Colors.white, width: 1),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.25),
-                            spreadRadius: 1,
-                            blurRadius: 1,
-                            offset: Offset(0, 1))
-                      ]),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                          width: 83,
-                          height: 39,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Все",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w300),
-                            ),
-                            style: ButtonStyle(
-                                backgroundColor: MaterialStateColor.resolveWith(
-                                    (states) =>
-                                        Color.fromRGBO(225, 182, 200, 1)),
-                                shape: MaterialStateProperty.all<
-                                        RoundedRectangleBorder>(
-                                    RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15),
-                                ))),
-                          )),
-                      SizedBox(width: 37, height: 1),
-                      Container(
-                          width: 135,
-                          height: 39,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Онлайн",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w300),
-                            ),
-                            style: ButtonStyle(
-                                backgroundColor: MaterialStateColor.resolveWith(
-                                    (states) =>
-                                        Color.fromRGBO(225, 182, 200, 1)),
-                                shape: MaterialStateProperty.all<
-                                        RoundedRectangleBorder>(
-                                    RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15),
-                                ))),
-                          )),
-                      SizedBox(width: 37, height: 1),
-                      Container(
-                          width: 195,
-                          height: 39,
-                          child: ElevatedButton(
-                            onPressed: () {},
-                            child: Text(
-                              "Избранные",
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w300),
-                            ),
-                            style: ButtonStyle(
-                                backgroundColor: MaterialStateColor.resolveWith(
-                                    (states) =>
-                                        Color.fromRGBO(225, 182, 200, 1)),
-                                shape: MaterialStateProperty.all<
-                                        RoundedRectangleBorder>(
-                                    RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(15),
-                                ))),
-                          )),
-                    ],
-                  ),
-                ),
-              ),
-              Padding(
                 padding: EdgeInsets.only(left: 51, top: 146),
                 child: Text(
                   "Новые контакты: ",
@@ -340,23 +249,7 @@ class _MeetMeChatPageState extends State<MeetMeChatPage> {
                               sendButtonColor: Color.fromRGBO(232, 189, 208, 1),
                               messageBarColor: Colors.transparent,
                               onSend: (_) => sentMessage(_),
-                              actions: [
-                                Padding(
-                                  padding: EdgeInsets.only(left: 27),
-                                  child: InkWell(
-                                    child: Image.network(
-                                        "lib/Temp/ImageSendButtonImg.png"),
-                                    onTap: () {},
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.only(left: 27, right: 27),
-                                  child: InkWell(
-                                    child: Image.network("lib/Temp/Smile.png"),
-                                    onTap: () {setState(() {});},
-                                  ),
-                                ),
-                              ],
+                              actions: [],
                             ),
                           ))
                     ],

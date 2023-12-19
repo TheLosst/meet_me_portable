@@ -29,6 +29,10 @@ User user = User(id: 0 ,sex: "0",withMeets: "null",targetMeet: "null",targetHeig
 late User userLoggined;
 User messageTo = user;
 
+int currentPageIndex = 0;
+
+late int index_users_chat;
+
 late Future<List<User>> usersToSwipe;
 
 MatchEngine matchEngine = MatchEngine();

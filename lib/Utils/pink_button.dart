@@ -38,8 +38,8 @@ class ButtonPink extends StatelessWidget {
           boxShadow: [
             BoxShadow(
                 color: Color.fromRGBO(0, 0, 0, 0.25),
-                spreadRadius: 5,
-                blurRadius: 7,
+                spreadRadius: 1,
+                blurRadius: 3,
                 offset: Offset(0, 3))
           ]),
       child: ElevatedButton(

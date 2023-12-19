@@ -83,7 +83,7 @@ class _MeetMeSearchPageState extends State<MeetMeSearchPage> {
     return Scaffold(
       body: Center(
         child: FittedBox(
-          fit: BoxFit.contain,
+          fit: BoxFit.fitHeight,
           child: Stack(
             children: [
               Padding(
@@ -127,7 +127,7 @@ class _MeetMeSearchPageState extends State<MeetMeSearchPage> {
                                   borderRadius: BorderRadius.circular(15),
                                 ))),
                           )),
-                      SizedBox(width: 37, height: 1),
+                      SizedBox(width: 36, height: 1),
                       Container(
                           width: 135,
                           height: 39,
@@ -188,7 +188,7 @@ class _MeetMeSearchPageState extends State<MeetMeSearchPage> {
                   padding: EdgeInsets.only(left: 51, top: 203),
                   child: Container(
                     width: 515,
-                    height: 800,
+                    height: 1000,
                     child: FutureBuilder<List?>(
                       future: buildListMess(),
                       builder: (BuildContext context, AsyncSnapshot<List?> snapshot) {
@@ -225,7 +225,7 @@ class _MeetMeSearchPageState extends State<MeetMeSearchPage> {
                   children: [
                     Container(
                       width: 1000,
-                      height: 1200,
+                      height: 2000,
                       child: GridView.builder(
                           gridDelegate:
                               SliverGridDelegateWithMaxCrossAxisExtent(
